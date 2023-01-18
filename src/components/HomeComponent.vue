@@ -17,7 +17,7 @@ div.first-divider
                           br
                           span Processos
                         p.answer-main-text(v-if='!isMobile')
-                          span Desenvolvimento de software completo para o crescimento do seu negócio.
+                          span Desenvolvimento de software completo para o crescimento do seu negócio.!!!!!!!!!!!!!
 </template>
 
 <script>
