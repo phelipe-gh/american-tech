@@ -1,0 +1,46 @@
+{
+  "name": "RHUB",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bootstrap": "^5.2.0",
+    "bootstrap-vue": "^2.22.0",
+    "core-js": "^3.24.1",
+    "element-ui": "^2.15.9",
+    "eslint-config-airbnb": "^19.0.4",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "vue": "^2.7.8",
+    "vue-apexcharts": "^1.6.2",
+    "vue-el-element": "^1.12.8",
+    "vue-router": "^3.5.4"
+  },
+  "devDependencies": {
+    "@stencil/core": "^2.17.3",
+    "@stencil/react-output-target": "0.3.1",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-e2e-cypress": "^5.0.8",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-router": "~5.0.8",
+    "@vue/cli-plugin-unit-jest": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/test-utils": "^2.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.21.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "sass": "^1.54.2",
+    "sass-loader": "^13.0.2",
+    "vue-template-compiler": "^2.7.8"
+  }
+}
