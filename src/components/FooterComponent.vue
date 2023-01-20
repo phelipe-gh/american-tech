@@ -17,6 +17,9 @@ div.footer-div(id='fale-conosco')
         b-col.col-12.flex-box(style='margin-top: 10px')
           b-icon(icon='geo-alt' scale='1' style='color: white; margin-right: 7px')
           label.contact-text-info Poços de Caldas - Minas Gerais
+        b-col.col-12.flex-box.center
+          div.area-logo
+            img(src='../assets/img/logo.png')
 
 </template>
 <script>
@@ -27,7 +30,7 @@ export default {
 </script>
 <style lang='css'>
   .footer-div {
-    background-image: linear-gradient(180deg, #044466, #04142c)
+    background-image: linear-gradient(180deg, #7d99bb, #04142c)
   }
   .contact-text {
     color: white;

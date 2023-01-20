@@ -2,7 +2,8 @@
 b-container.calc--header-navbar.nav-bar-background(fluid='' style='padding-left: 35px; padding-right: 35px;')
   .navbar--mobile
     a(href='/')
-      label Logo
+      div.area-logo
+        img(src='../assets/img/logo.png')
     .col-burger
       b-icon(icon='list' scale='4.5' style='color: rgb(255, 255, 225);; margin-right: 1rem;' @click='toggleMenu')
         i.fas.fa-bars.text-white(:class="{'active' : menuActived}")
