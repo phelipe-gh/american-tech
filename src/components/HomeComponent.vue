@@ -1,22 +1,16 @@
 <template lang='pug'>
 div.first-divider
-  header(:ismobile='isMobile' parentpage='index')
-    b-row.center(style='margin-left:0;margin-right:0;')
-      b-col(cols='12' style='padding:0 !important')
-        b-jumbotron.primary-divider
-          div(style='width: 1235px')
-            b-row
-              b-col.col-12(style='margin-top: 100px;')
-                b-col.col-12
-                  .d-flex.banner-text-wrapper.justify-content-between
-                    div
-                      b-row.p-4
-                        p.main-text
-                          span Otimizando
-                          br
-                          span Processos
-                        p.answer-main-text
-                          span Desenvolvimento de software completo para o crescimento do seu negócio.
+  b-row
+    b-col.col-12.mt-4
+      .d-flex.banner-text-wrapper.justify-content-between
+        div.mt-4
+          b-row.p-4
+            p.main-text
+              span Otimizando
+              br
+              span Processos
+            p.answer-main-text
+              span Desenvolvimento de software completo para o crescimento do seu negócio.
 </template>
 
 <script>
@@ -44,8 +38,8 @@ export default {
     font-weight: bold;
     text-align: left;
   }
-  .primary-divider .answer-main-text span {
-    background-color: rgba(76, 117, 136, 0.6);
+  .answer-main-text span {
+    background-color: rgba(0, 62, 99, 0.9);
     padding: 3px;
     display: inline-block;
     border-radius: 5px;

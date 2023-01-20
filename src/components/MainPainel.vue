@@ -3,7 +3,7 @@ div.no-scroll(v-if="betweenSizeLimited")
   MobileHomeComponent
   //- MobileAboutUsComponent
   MobileServicesComponent
-  FooterComponent
+  MobileFooterComponent
 
 div(v-else)
   HeaderComponent
@@ -18,6 +18,7 @@ import MobileHeaderComponent from '../components/MobileHeaderComponent';
 import MobileHomeComponent from '../components/MobileHomeComponent';
 import MobileServicesComponent from '../components/MobileServicesComponent';
 import MobileAboutUsComponent from '../components/MobileAboutUsComponent';
+import MobileFooterComponent from '../components/MobileFooterComponent';
 
 import HeaderComponent from '../components/HeaderComponent';
 import HomeComponent from '../components/HomeComponent';
@@ -31,6 +32,7 @@ export default {
     MobileHomeComponent,
     MobileServicesComponent,
     MobileAboutUsComponent,
+    MobileFooterComponent,
 
     HeaderComponent,
     HomeComponent,

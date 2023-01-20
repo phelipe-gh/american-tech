@@ -2,28 +2,26 @@
 b-container.calc--header-navbar.nav-bar-background(fluid='' style='padding-left: 35px; padding-right: 35px;')
   .navbar--mobile
     a(href='/')
-      div.area-logo
-        img(src='../assets/img/logo.png')
+      img.icon-width(src="../assets/img/logo.png" style='width: 5rem; height: 5rem;')
     .col-burger
       b-icon(icon='list' scale='4.5' style='color: rgb(255, 255, 225);; margin-right: 1rem;' @click='toggleMenu')
         i.fas.fa-bars.text-white(:class="{'active' : menuActived}")
   .popup-navbar--mobile(v-if="menuActived" style='padding-left: 35px; padding-right: 35px; overflow: hidden;')
     .topbar-wrapper(style='display: relative')
       a(href='/' style='display: relative')
-        label Logo
-      b-icon(icon='x' scale='4.5' style='color: rgb(255, 255, 225); margin-right: 1rem' @click='toggleMenu')
+        img(src="../assets/img/logo.png" style='width: 5rem; height: 5rem;')
+      b-icon(icon='x' scale='5' style='color: rgb(255, 255, 225); margin-top: 1.2rem; margin-right: 1rem' @click='toggleMenu')
     .midbar-wrapper
       ul.links--list
         .links--wrapper
           li.links--item
-            a(href='/#mobile-quem-somos' @click='toggleMenu') Serviços
+            a(href='/#mobile-treinamento' @click='toggleMenu') Sobre nós
           li.links--item
-            a(href='/#mobile-consultoria' @click='toggleMenu') Sobre nós
+            a(href='/#mobile-depoimentos' @click='toggleMenu') Serviços
           li.links--item
-            a(href='/#mobile-recrutamento' @click='toggleMenu') Fale conosco
+            a(href='https://api.whatsapp.com/send?phone=5535999607833&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20a%20American%20Tech.' target="_blank") Fale conosco
 
 </template>
-
 <script>
 
 export default {
@@ -48,90 +46,48 @@ export default {
   },
 };
 </script>
-
 <style lang='scss' scoped>
-  .icon-width {
-    width: 120px;
-    height: 120px;
-  }
-  .area-logo {
-    max-width: 150px;
-    max-height: 150px;
-  }
-  .center {
-    display: flex;
-    justify-content: center;
-  }
-  .subtitle-first-divider {
-    color: white;
-    font-size: 25px;
-  }
-  .max-width {
-    max-width: 100%;
-  }
-  .full {
-    width: 100%;
-  }
-  .max-width {
-    max-width: 1235px;
+.liner {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0px;
+  width: 100%;
+
+  &:after {
+    content: '';
+    flex-grow: 1;
+    height: 2px;
+    background: #ffffff;
+    min-width: 20px;
     margin: 0 auto;
-    width: 100%;
   }
-.uk-button {
-    border: 2px solid #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/uk-flag.png');
-    background-repeat: no-repeat;
-    background-size: 160%;
-    background-position-x: 40%;
-    font-weight: bold;
-    color: #fff;
-    transition: 00.3s;
-    height: 28px;
   }
-  .uk-button:hover {
-    border: 2px solid #fff;
-    color: rgb(45, 187, 253);
-    transform: scale(1.1, 1.1);
+  .mobile-header-animation {
+    animation: go-back 0.3s;
   }
-  .sp-button {
-    border: 2px solid #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/spain-flag.png');
-    background-size: 130%;
-    font-weight: bold;
-    margin-left: 10px;
-    color: #fff;
-    transition: 0.3s;
-    height: 28px;
+  @keyframes go-back {
+    0% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
   }
-  .sp-button:hover {
-    border: 2px solid #fff;
-    color: rgb(45, 187, 253);
-    transform: scale(1.1, 1.1);
+  .nav-bar-background {
+    background-color: rgba(11, 15, 78, 0.61);
   }
-  .pt-button {
-    border: 2px solid #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/brazil-flag.png');
-    background-size: 130%;
-    background-position-x: 40%;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #fff;
-    transition: 0.3s;
-    height: 28px;
+  .max-width {
+      max-width: 1235px;
+      margin: 0 auto;
+      width: 100%;
   }
-  .pt-button:hover {
-    border: 2px solid #fff;
-    transform: scale(1.1, 1.1);
-    color: rgb(45, 187, 253);
+  .list-font-family {
+    font-family: opensauce semibold;
   }
   .calc--header-navbar {
-    color: white;
-    background-image: linear-gradient(
-        180deg,
-        rgba(10, 30, 71, 0.5) 0%,
-        rgba(39, 52, 114, 0) 100%
-    );
+    background-color:  rgb(0, 31, 55);
+    box-shadow: 0px 6px 10px rgb(0, 107, 130);
     min-height: 100px;
     display: flex;
     flex-direction: column;
@@ -141,10 +97,11 @@ export default {
     .navbar--desktop {
         display: flex;
         height: 100%;
+        position: absolute;
 
         .max-width {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
         }
 
@@ -154,21 +111,22 @@ export default {
 
             .links--list {
                 display: flex;
-                justify-content: flex-start;
+                justify-content: space-between;
                 padding-left: 0;
                 list-style: none;
+                display: flex;
                 flex-direction: row;
                 margin-bottom: 0;
+
                 .links--item {
                     display: flex;
                     align-items: center;
                     font-weight: 600;
-                    margin-left: 12px;
+                    text-align: left;
 
                     a {
                         color: unset;
                         text-decoration: none;
-
                     }
                 }
             }
@@ -179,6 +137,7 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        overflow: hidden;
     }
     .popup-navbar--mobile {
         position: fixed;
@@ -187,10 +146,11 @@ export default {
         height: 100%;
         width: 100%;
         overflow-x: hidden;
-        background-color: #000f23;
+        background-color: rgb(0, 31, 55);
         padding: 0 15px;
         display: flex;
         flex-direction: column;
+        overflow-y: hidden;
 
         .topbar-wrapper {
             height: 100px;
@@ -215,9 +175,14 @@ export default {
                         font-size: 24px;
                         padding-bottom: 35px;
                         text-align: center;
+                        display: block;
+                        align-items: center;
 
                         a {
-                            color: unset;
+                            color: rgb(255, 255, 255);
+                            font-weight: 500;
+                            text-align: center;
+                            font-size: 1.7rem;
                             text-decoration: none;
                         }
                     }

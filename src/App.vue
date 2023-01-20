@@ -5,15 +5,6 @@ div.app
 </template>
 <script>
 
-export default {
-  name: 'HomeSite',
-
-  created() {
-
-    document.title = 'American Tech';
-
-  },
-};
 </script>
 <style>
   .app {

@@ -19,7 +19,7 @@ div.footer-div(id='fale-conosco')
           label.contact-text-info Poços de Caldas - Minas Gerais
         b-col.col-12.flex-box.center
           div.area-logo
-            img(src='../assets/img/logo.png' style='height: 150px; margin-bottom: -20px;')
+            img(src='../assets/img/logo.png' style='height: 6rem; width: 6rem;')
 
 </template>
 <script>

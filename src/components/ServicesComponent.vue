@@ -8,33 +8,33 @@ div.second-divider(id='services')
       b-col.col-xl-6.col-lg-12.col-md-12.p-3
         div.card
           b-row.center
-            b-icon.center(icon='columns' scale='2' style='color: rgb(0, 180, 220)')
+            b-icon.center(icon='columns' scale='2' style='color: rgb(0, 50, 120)')
           label.services-main-text Criação de Landing pages
           label Uma página que conta com todos os elementos voltados à conversão, do visitante ao Lead ou da oportunidade ao cliente
       b-col.col-xl-6.col-lg-12.col-md-12.p-3
         div.card
           b-row.center
-            b-icon.center(icon='gear-fill' scale='2' style='color: rgb(0, 180, 220)')
+            b-icon.center(icon='gear-fill' scale='2' style='color: rgb(0, 50, 120)')
           label.services-main-text Sistemas web
           label Sistemas para automatizar seu negócio de maneira que voce consiga extrair o melhor do seu produto
     b-row.p-3(style='margin-top: -50px')
       b-col.col-xl-6.col-lg-12.col-md-12.p-3
         div.card
           b-row.center
-            b-icon.center(icon='receipt-cutoff' scale='2' style='color: rgb(0,180, 220)')
+            b-icon.center(icon='receipt-cutoff' scale='2' style='color: rgb(0, 50, 120)')
           label.services-main-text Criação de blogs
           label Blogs para voce publicar conteúdos, como artigos e fotos de maneira objetiva e intuitiva
       b-col.col-xl-6.col-lg-12.col-md-12.p-3
         div.card
           b-row.center
-              b-icon.center(icon='card-checklist' scale='2' style='color: rgb(0, 180, 220)')
+              b-icon.center(icon='card-checklist' scale='2' style='color: rgb(0, 24, 70)')
           label.services-main-text Manutenção sobre demanda:
           label Atualmente temos uma grande área de atuação, com diversas tecnologias afim de corrigir/evoluir seu software
     b-row.center
       b-col.col-xl-8.col-lg-12.col-md-12.p-3
         div.card
           b-row.center
-            b-icon.center(icon='bar-chart-fill' scale='2' style='color: rgb(0, 180, 220)')
+            b-icon.center(icon='bar-chart-fill' scale='2' style='color: rgb(0, 50, 120)')
           label.services-main-text Serviços especializados
           label Terceirização de profissionais(Desenvolvedores, QA's e Product Managers)
           label Desenvolvedores node, PHP, Low Code/No Code, VueJs, Angular etc

@@ -8,7 +8,7 @@ div.first-divider
           div(style='width: 1235px')
             // <Header :isMobile="isMobile" />
             b-row
-              b-col.col-12.p-4(style='margin-top: 60px;')
+              b-col.col-12.p-4
                 b-row
                   p.main-text
                     span Otimizando
@@ -40,7 +40,7 @@ export default {
     text-align: left;
   }
   .primary-divider .answer-main-text span {
-    background-color: rgba(76, 117, 136, 0.6);
+    background-color: rgba(0, 62, 99, 0.9);
     font-size: 35px;
     padding: 3px;
     display: inline-block;
