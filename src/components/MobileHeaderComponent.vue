@@ -1,19 +1,26 @@
 <template lang='pug'>
-  b-container.black.calc--header-navbar(fluid='' :class='isMobileClass' :style="parentPage == 'index' ? 'padding-left: 35px; padding-right: 35px;' : ''")
-    .navbar--desktop
-      .max-width
-        .col-links
-          ul.links--list
-            li.links--item
-              a(href='/#services') Serviços
-            li.links--item
-              a(href='/#about-us') Sobre nós
-            li.links--item
-              a(href='/' target='_blank') Fale conosco
-            li(style='display: flex; margin-left: 30px')
-              button.uk-button UK
-              button.sp-button SP
-              button.pt-button PT
+b-container.calc--header-navbar.nav-bar-background(fluid='' style='padding-left: 35px; padding-right: 35px;')
+  .navbar--mobile
+    a(href='/')
+      label Logo
+    .col-burger
+      b-icon(icon='list' scale='4.5' style='color: rgb(255, 255, 225);; margin-right: 1rem;' @click='toggleMenu')
+        i.fas.fa-bars.text-white(:class="{'active' : menuActived}")
+  .popup-navbar--mobile(v-if="menuActived" style='padding-left: 35px; padding-right: 35px; overflow: hidden;')
+    .topbar-wrapper(style='display: relative')
+      a(href='/' style='display: relative')
+        label Logo
+      b-icon(icon='x' scale='4.5' style='color: rgb(255, 255, 225); margin-right: 1rem' @click='toggleMenu')
+    .midbar-wrapper
+      ul.links--list
+        .links--wrapper
+          li.links--item
+            a(href='/#mobile-quem-somos' @click='toggleMenu') Serviços
+          li.links--item
+            a(href='/#mobile-consultoria' @click='toggleMenu') Sobre nós
+          li.links--item
+            a(href='/#mobile-recrutamento' @click='toggleMenu') Fale conosco
+
 </template>
 
 <script>
@@ -26,10 +33,18 @@ export default {
 
   data() {
 
-    return {};
+    return {
+      menuActived: false,
+    };
 
   },
+  methods: {
+    toggleMenu() {
 
+      this.menuActived = !this.menuActived;
+
+    },
+  },
 };
 </script>
 
@@ -171,7 +186,7 @@ export default {
         height: 100%;
         width: 100%;
         overflow-x: hidden;
-        background-color: rgba(39, 52, 114, 0.98);
+        background-color: #000f23;
         padding: 0 15px;
         display: flex;
         flex-direction: column;

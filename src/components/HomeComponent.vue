@@ -3,21 +3,20 @@ div.first-divider
   header(:ismobile='isMobile' parentpage='index')
     b-row.center(style='margin-left:0;margin-right:0;')
       b-col(cols='12' style='padding:0 !important')
-        b-jumbotron.primary-divider.center.mb-0(style='padding-top: 20px')
+        b-jumbotron.primary-divider
           div(style='width: 1235px')
-            // <Header :isMobile="isMobile" />
             b-row
-              b-col.col-12(style='margin-top: 175px;')
+              b-col.col-12(style='margin-top: 100px;')
                 b-col.col-12
                   .d-flex.banner-text-wrapper.justify-content-between
                     div
-                      b-row
+                      b-row.p-4
                         p.main-text
                           span Otimizando
                           br
                           span Processos
-                        p.answer-main-text(v-if='!isMobile')
-                          span Desenvolvimento de software completo para o crescimento do seu negócio.!!!!!!!!!!!!!
+                        p.answer-main-text
+                          span Desenvolvimento de software completo para o crescimento do seu negócio.
 </template>
 
 <script>
@@ -64,9 +63,10 @@ export default {
     background-image: url('../assets/img/home-background.jpg');
     background-position-x: 10%;
     background-size: 100%;
+    background-position-y: 50%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/img/home-background.jpg');
-    height: 110vh;
     max-height: 960px;
+    min-height: 85vh;
   }
   .area-logo {
     max-width: 150px;

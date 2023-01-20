@@ -7,6 +7,12 @@ div.app
 
 export default {
   name: 'HomeSite',
+
+  created() {
+
+    document.title = 'American Tech';
+
+  },
 };
 </script>
 <style>

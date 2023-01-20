@@ -3,46 +3,44 @@ div.second-divider(id='services')
   b-col.col-12
     span.about-title(style='font-weight: 400') Quais são os
     span.about-title Nossos Serviços?
-  b-col.col-12.p-4
+  b-col.col-12
     b-row.p-3
-      b-col.col-xl-6.col-lg-12.col-md-12.p-3
+      b-col.col-12
         div.card
           b-row.center
             b-icon.center(icon='columns' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Criação de Landing pages
           label Uma página que conta com todos os elementos voltados à conversão, do visitante ao Lead ou da oportunidade ao cliente
-      b-col.col-xl-6.col-lg-12.col-md-12.p-3
+      b-col.col-12
         div.card
           b-row.center
             b-icon.center(icon='gear-fill' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Sistemas web
           label Sistemas para automatizar seu negócio de maneira que voce consiga extrair o melhor do seu produto
-    b-row.p-3(style='margin-top: -50px')
-      b-col.col-xl-6.col-lg-12.col-md-12.p-3
+      b-col.col-12
         div.card
           b-row.center
             b-icon.center(icon='receipt-cutoff' scale='2' style='color: rgb(0,180, 220)')
           label.services-main-text Criação de blogs
           label Blogs para voce publicar conteúdos, como artigos e fotos de maneira objetiva e intuitiva
-      b-col.col-xl-6.col-lg-12.col-md-12.p-3
+      b-col.col-12
         div.card
           b-row.center
               b-icon.center(icon='card-checklist' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Manutenção sobre demanda:
           label Atualmente temos uma grande área de atuação, com diversas tecnologias afim de corrigir/evoluir seu software
-    b-row.center
-      b-col.col-xl-8.col-lg-12.col-md-12.p-3
+      b-col.col-12
         div.card
           b-row.center
             b-icon.center(icon='bar-chart-fill' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Serviços especializados
-          label Terceirização de profissionais(Desenvolvedores, QA's e Product Managers)
-          label Desenvolvedores node, PHP, Low Code/No Code, VueJs, Angular etc
+          label Terceirização de profissionais
+          label (Desenvolvedores, QA's e Product Managers)
 </template>
 
 <style lang='css' scoped>
   .about-title {
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(9, 33, 60);
     font-weight: bold;
     display: flex;
@@ -64,9 +62,10 @@ div.second-divider(id='services')
   }
   .services-main-text {
     color: rgb(0, 107, 130);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
-    margin-top: 15px
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .card {
     border-radius: 5px;

@@ -14,7 +14,7 @@ div.first-divider
                     span Otimizando
                     br
                     span Processos
-                  p.answer-main-text(style='margin-top: 20px;')
+                  p.answer-main-text(style='margin: 30px 0px;')
                     span Desenvolvimento
                     br
                     span de software
@@ -91,7 +91,7 @@ export default {
   .first-divider {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/img/home-background.jpg');
     background-size: 1350px;
-    height: 100vh;
+    height: 85vh;
   }
   .animation {
     animation: go-back 2s;

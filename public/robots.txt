@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rhubaceleradora.com/sitemap.xml
+Sitemap: https://americantech.dev.br//sitemap.xml

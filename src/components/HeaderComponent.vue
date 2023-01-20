@@ -3,17 +3,13 @@
     .navbar--desktop
       .max-width
         .col-links
-          ul.links--list
-            li.links--item
-              a(href='/#services') Serviços
+          ul.links--list(style='display: flex; justify-content: end')
             li.links--item
               a(href='/#about-us') Sobre nós
             li.links--item
-              a(href='/' target='_blank') Fale conosco
-            li(style='display: flex; margin-left: 30px')
-              button.uk-button UK
-              button.sp-button SP
-              button.pt-button PT
+              a(href='/#services') Serviços
+            li.links--item
+              a(href='/#fale-conosco') Fale conosco
 </template>
 
 <script>
@@ -66,16 +62,14 @@ export default {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/img/uk-flag.png');
     background-repeat: no-repeat;
     background-size: 160%;
-    background-position-x: 40%;
+    background-position-x: 50%;
     font-weight: bold;
     margin-left: 10px;
     color: #fff;
-    transition: 00.3s;
   }
-  .uk-button:hover {
+  .uk-button:focus {
     border: 2px solid #fff;
     color: rgb(45, 187, 253);
-    transform: scale(1.1, 1.1);
   }
   .sp-button {
     border: 2px solid #000;
@@ -84,12 +78,10 @@ export default {
     font-weight: bold;
     margin-left: 10px;
     color: #fff;
-    transition: 0.3s;
   }
-  .sp-button:hover {
+  .sp-button:focus {
     border: 2px solid #fff;
     color: rgb(45, 187, 253);
-    transform: scale(1.1, 1.1);
   }
   .pt-button {
     border: 2px solid #000;
@@ -99,19 +91,17 @@ export default {
     font-weight: bold;
     margin-left: 10px;
     color: #fff;
-    transition: 0.3s;
   }
-  .pt-button:hover {
+  .pt-button:focus {
     border: 2px solid #fff;
-    transform: scale(1.1, 1.1);
     color: rgb(45, 187, 253);
   }
   .calc--header-navbar {
     color: white;
     background-image: linear-gradient(
         180deg,
-        rgba(10, 30, 71, 0.5) 0%,
-        rgba(39, 52, 114, 0) 100%
+        rgba(10, 30, 71, 1) 0%,
+        rgba(39, 52, 114, 0.02) 100%
     );
     min-height: 100px;
     position: fixed;
@@ -145,7 +135,7 @@ export default {
                     display: flex;
                     align-items: center;
                     font-weight: 600;
-                    margin-left: 50px;
+                    margin-left: 80px;
 
                     a {
                         color: unset;
@@ -167,10 +157,6 @@ export default {
         top: 0; left: 0;
         height: 100%;
         width: 100%;
-        overflow-x: hidden;
-        background-color: rgba(39, 52, 114, 0.98);
-        padding: 0 15px;
-        display: flex;
         flex-direction: column;
 
         .topbar-wrapper {

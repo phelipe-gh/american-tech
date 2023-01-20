@@ -2,34 +2,35 @@
 div.no-scroll(v-if="betweenSizeLimited")
   MobileHomeComponent
   //- MobileAboutUsComponent
-  //- MobileFooterComponent
+  MobileServicesComponent
+  FooterComponent
 
 div(v-else)
   HeaderComponent
   HomeComponent(:screenWidth="this.screenWidth")
-  //- AboutUsComponent
-  //- ServicesComponent
-  //- FooterComponent
+  AboutUsComponent
+  ServicesComponent
+  FooterComponent
 
 </template>
 <script>
 import MobileHeaderComponent from '../components/MobileHeaderComponent';
 import MobileHomeComponent from '../components/MobileHomeComponent';
+import MobileServicesComponent from '../components/MobileServicesComponent';
 import MobileAboutUsComponent from '../components/MobileAboutUsComponent';
-import MobileFooterComponent from '../components/MobileFooterComponent';
 
 import HeaderComponent from '../components/HeaderComponent';
 import HomeComponent from '../components/HomeComponent';
 import AboutUsComponent from './AboutUsComponent.vue';
 import ServicesComponent from '../components/ServicesComponent';
-import FooterComponent from './FooterComponent.vue';
+import FooterComponent from './FooterComponent';
 
 export default {
   components: {
     MobileHeaderComponent,
     MobileHomeComponent,
+    MobileServicesComponent,
     MobileAboutUsComponent,
-    MobileFooterComponent,
 
     HeaderComponent,
     HomeComponent,
