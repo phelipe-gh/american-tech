@@ -1,5 +1,5 @@
 <template lang='pug'>
-div.second-divider.center(id='about-us' style='margin-top: -30px')
+div.second-divider.center(id='about-us')
   .max-width-1235
     b-col.col-12.p-3
       b-row.p-3

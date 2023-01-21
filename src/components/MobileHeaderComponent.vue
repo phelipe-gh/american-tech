@@ -19,6 +19,8 @@ b-container.calc--header-navbar.nav-bar-background(fluid='' style='padding-left:
           li.links--item
             a(href='/#mobile-depoimentos' @click='toggleMenu') Serviços
           li.links--item
+            a(href='/#mobile-depoimentos' @click='toggleMenu') Consultoria
+          li.links--item
             a(href='https://api.whatsapp.com/send?phone=5535999607833&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20a%20American%20Tech.' target="_blank") Fale conosco
 
 </template>

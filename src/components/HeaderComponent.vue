@@ -17,6 +17,8 @@ div.center(style='width: 100%;')
                 li.links--item(style='margin-left: 80px;')
                   a(href='/#services') Serviços
                 li.links--item(style='margin-left: 80px;')
+                  a(href='/#consultoria') Consultoria
+                li.links--item(style='margin-left: 80px;')
                   a(href='/#fale-conosco') Fale conosco
 </template>
 
@@ -107,8 +109,8 @@ export default {
     color: white;
     background-image: linear-gradient(
         180deg,
-        rgba(10, 30, 71, 1) 0%,
-        rgba(39, 52, 114, 0.02) 100%
+        rgba(9, 21, 46, 0.938) 70%,
+        rgba(128, 140, 202, 0) 100%
     );
     min-height: 100px;
     position: fixed;

@@ -5,40 +5,47 @@ div.second-divider.center(id='services')
       span.about-title(style='font-weight: 400') Quais são os
       span.about-title Nossos Serviços?
     b-col.col-12.p-4
-      b-row.p-3
-        b-col.col-xl-6.col-lg-12.col-md-12.p-3
+      b-row
+        b-col.col-xl-6.col-lg-12.col-md-12
           div.card
             b-row.center
               b-icon.center(icon='columns' scale='2' style='color: rgb(0, 50, 120)')
             label.services-main-text Criação de Landing pages
-            label Uma página que conta com todos os elementos voltados à conversão, do visitante ao lead ou da oportunidade ao cliente
-        b-col.col-xl-6.col-lg-12.col-md-12.p-3
+            label Uma página que conta com todos os elementos voltados à conversão, do visitante ao lead ou da oportunidade ao cliente.
+        b-col.col-xl-6.col-lg-12.col-md-12
           div.card
             b-row.center
               b-icon.center(icon='gear-fill' scale='2' style='color: rgb(0, 50, 120)')
             label.services-main-text Sistemas web
-            label Desenvolvemos sistemas web para automatizar seu negócio de maneira que voce consiga extrair o melhor do seu produto
-      b-row.p-3(style='margin-top: -50px')
-        b-col.col-xl-6.col-lg-12.col-md-12.p-3
+            label Desenvolvemos sistemas web para automatizar seu negócio de maneira que voce consiga extrair o melhor do seu produto.
+      b-row
+        b-col.col-xl-6.col-lg-12.col-md-12
           div.card
             b-row.center
               b-icon.center(icon='receipt-cutoff' scale='2' style='color: rgb(0, 50, 120)')
             label.services-main-text Criação de blogs
-            label Blogs para voce publicar conteúdos, como artigos e fotos de maneira objetiva e intuitiva
-        b-col.col-xl-6.col-lg-12.col-md-12.p-3
+            label Blogs para voce publicar conteúdos, como artigos e fotos de maneira objetiva e intuitiva.
+        b-col.col-xl-6.col-lg-12.col-md-12
           div.card
             b-row.center
                 b-icon.center(icon='card-checklist' scale='2' style='color: rgb(0, 24, 70)')
             label.services-main-text Atuação sobre demanda
-            label Atualmente temos uma grande área de atuação, com diversas tecnologias afim de corrigir/evoluir seu software
-      b-row.center
-        b-col.col-xl-8.col-lg-12.col-md-12.p-3
+            label Atualmente temos uma grande área de atuação, com diversas tecnologias afim de corrigir/evoluir seu software.
+      b-row
+        b-col.col-12
           div.card
             b-row.center
               b-icon.center(icon='bar-chart-fill' scale='2' style='color: rgb(0, 50, 120)')
             label.services-main-text Serviços especializados
             label Terceirização de profissionais(Desenvolvedores, QA's e Product Managers)
-            label Atuando da maneira que você precisa
+            label Atuando da maneira que você precisa.
+        b-col.col-12
+          div.card(id='consultoria')
+            b-row.center
+              b-icon.center(icon='bar-chart-fill' scale='2' style='color: rgb(0, 50, 120)')
+            label.services-main-text Consultoria para sua carreira
+            label Temos um guia de sucesso para sua carreira no mundo da tecnologia, com o acompanhamento de profissionais
+            label experientes para te ajudar na etapa voce se encontra.
 </template>
 
 <style lang='css' scoped>
