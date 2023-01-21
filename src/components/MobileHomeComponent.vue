@@ -11,15 +11,14 @@ div.first-divider
               b-col.col-12.p-4
                 b-row
                   p.main-text
-                    span Otimizando
+                    span Gerenciando
                     br
-                    span Processos
-                  p.answer-main-text(style='margin: 30px 0px;')
-                    span Desenvolvimento
+                    span Suas Demandas
                     br
-                    span de software
-                    br
-                    span de ponta à ponta.
+                    span Tecnológicas
+                  p.answer-main-text.mt-4
+                    span Soluções para o seu negócio na maneira que você precisa
+
 </template>
 
 <script>
@@ -41,7 +40,7 @@ export default {
   }
   .primary-divider .answer-main-text span {
     background-color: rgba(0, 62, 99, 0.9);
-    font-size: 35px;
+    font-size: 30px;
     padding: 3px;
     display: inline-block;
     border-radius: 5px;

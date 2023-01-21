@@ -3,8 +3,8 @@ div.second-divider(id='about-us' style='margin-top: -30px')
   b-col.col-12.p-3
     b-row.p-4
       label.about-title Quem somos?
-        label.about-text Somos um grupo brasileiro formado por profissionais inspiradores,
-          | &nbsp; sempre otimizando várias atividades no processo de desenvolvimento de software.
+        label.about-text Somos um grupo brasileiro formado por profissionais determinados,
+          | &nbsp; sempre otimizando atividades no processo de desenvolvimento de software.
           | Conseguimos atuar desde a criação de uma ideia até sua entrega final.
           | Nosso objetivo é com as suas metas.
 </template>

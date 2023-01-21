@@ -4,13 +4,13 @@ b-container.calc--header-navbar.nav-bar-background(fluid='' style='padding-left:
     a(href='/')
       img.icon-width(src="../assets/img/logo.png" style='width: 5rem; height: 5rem;')
     .col-burger
-      b-icon(icon='list' scale='4.5' style='color: rgb(255, 255, 225);; margin-right: 1rem;' @click='toggleMenu')
+      b-icon(icon='list' scale='2.5' style='color: rgb(255, 255, 225);; margin-right: 1rem;' @click='toggleMenu')
         i.fas.fa-bars.text-white(:class="{'active' : menuActived}")
   .popup-navbar--mobile(v-if="menuActived" style='padding-left: 35px; padding-right: 35px; overflow: hidden;')
     .topbar-wrapper(style='display: relative')
       a(href='/' style='display: relative')
         img(src="../assets/img/logo.png" style='width: 5rem; height: 5rem;')
-      b-icon(icon='x' scale='5' style='color: rgb(255, 255, 225); margin-top: 1.2rem; margin-right: 1rem' @click='toggleMenu')
+      b-icon(icon='x' scale='3' style='color: rgb(255, 255, 225); margin-top: 1.2rem; margin-right: 1rem' @click='toggleMenu')
     .midbar-wrapper
       ul.links--list
         .links--wrapper

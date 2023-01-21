@@ -10,13 +10,13 @@ div.second-divider(id='services')
           b-row.center
             b-icon.center(icon='columns' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Criação de Landing pages
-          label Uma página que conta com todos os elementos voltados à conversão, do visitante ao Lead ou da oportunidade ao cliente
+          label Uma página que conta com todos os elementos voltados à conversão, do visitante ao lead ou da oportunidade ao cliente
       b-col.col-12
         div.card
           b-row.center
             b-icon.center(icon='gear-fill' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Sistemas web
-          label Sistemas para automatizar seu negócio de maneira que voce consiga extrair o melhor do seu produto
+          label Desenvolvemos sistemas web para automatizar seu negócio de maneira que voce consiga extrair o melhor do seu produto
       b-col.col-12
         div.card
           b-row.center
@@ -27,15 +27,15 @@ div.second-divider(id='services')
         div.card
           b-row.center
               b-icon.center(icon='card-checklist' scale='2' style='color: rgb(0, 180, 220)')
-          label.services-main-text Manutenção sobre demanda:
+          label.services-main-text Atuação sobre demanda
           label Atualmente temos uma grande área de atuação, com diversas tecnologias afim de corrigir/evoluir seu software
       b-col.col-12
         div.card
           b-row.center
             b-icon.center(icon='bar-chart-fill' scale='2' style='color: rgb(0, 180, 220)')
           label.services-main-text Serviços especializados
-          label Terceirização de profissionais
-          label (Desenvolvedores, QA's e Product Managers)
+          label Terceirização de profissionais(Desenvolvedores, QA's e Product Managers)
+          label Atuando da maneira que você precisa
 </template>
 
 <style lang='css' scoped>

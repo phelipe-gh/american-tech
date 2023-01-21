@@ -1,16 +1,19 @@
 <template lang='pug'>
-div.first-divider
-  b-row
-    b-col.col-12.mt-4
-      .d-flex.banner-text-wrapper.justify-content-between
-        div.mt-4
-          b-row.p-4
-            p.main-text
-              span Otimizando
-              br
-              span Processos
-            p.answer-main-text
-              span Desenvolvimento de software completo para o crescimento do seu negócio.
+div.first-divider.center
+  .max-width-1235
+    b-row
+      b-col.col-12(style='margin-top: 120px;')
+        b-row.p-4
+          p.main-text
+            span Gerenciando
+            br
+            span Suas Demandas
+            br
+            span Tecnológicas
+      b-col.col-12
+        b-row.p-4
+          p.answer-main-text
+            label Soluções para o seu negócio na maneira que você precisa.
 </template>
 
 <script>

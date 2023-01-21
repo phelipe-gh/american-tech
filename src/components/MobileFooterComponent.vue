@@ -46,7 +46,7 @@ export default {
   }
   .title-first-divider {
     color: white;
-    font-size: 55px;
+    font-size: 35px !important;
   }
   .center {
     display: flex;

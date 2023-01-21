@@ -1,15 +1,23 @@
 <template lang='pug'>
-  b-container.black.calc--header-navbar(fluid='' :class='isMobileClass' :style="parentPage == 'index' ? 'padding-left: 35px; padding-right: 35px;' : ''")
-    .navbar--desktop
+div.center(style='width: 100%;')
+  b-container.black.calc--header-navbar.flex(fluid='' :class='isMobileClass' style='align-items: center')
+    .navbar--desktop(style='display: flex; width:100%;')
       .max-width
         .col-links
-          ul.links--list(style='display: flex; justify-content: end')
-            li.links--item
-              a(href='/#about-us') Sobre nós
-            li.links--item
-              a(href='/#services') Serviços
-            li.links--item
-              a(href='/#fale-conosco') Fale conosco
+          b-row
+            b-col.col-2.mt-3
+              ul.links--list(style='display: flex; justify-content: start')
+                li.links--item
+                  div.area-logo
+                    img(src='../assets/img/logo.png' style='height: 90px;')
+            b-col.col-10.mt-4
+              ul.links--list(style='display: flex; justify-content: end;')
+                li.links--item(style='margin-left: 80px;')
+                  a(href='/#about-us') Sobre nós
+                li.links--item(style='margin-left: 80px;')
+                  a(href='/#services') Serviços
+                li.links--item(style='margin-left: 80px;')
+                  a(href='/#fale-conosco') Fale conosco
 </template>
 
 <script>
@@ -47,7 +55,7 @@ export default {
     font-size: 25px;
   }
   .max-width {
-    max-width: 100%;
+    max-width: 1235px !important;
   }
   .full {
     width: 100%;
@@ -55,7 +63,6 @@ export default {
   .max-width {
     max-width: 1235px;
     margin: 0 auto;
-    width: 100%;
   }
   .uk-button {
     border: 2px solid #000;
@@ -113,6 +120,7 @@ export default {
     .navbar--desktop {
         display: flex;
         height: 100%;
+        max-width: 1235px;
 
         .max-width {
             display: flex;
@@ -122,7 +130,6 @@ export default {
 
         .col-links {
             flex: 1;
-            max-width: 800px;
 
             .links--list {
                 display: flex;
@@ -135,7 +142,6 @@ export default {
                     display: flex;
                     align-items: center;
                     font-weight: 600;
-                    margin-left: 80px;
 
                     a {
                         color: unset;

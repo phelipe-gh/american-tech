@@ -1,18 +1,19 @@
 <template lang='pug'>
-div.second-divider(id='about-us' style='margin-top: -30px')
-  b-col.col-12.p-3
-    b-row.p-3
-      b-col.col-lg-col-5(style='padding: 40px')
-        div.about-image
-      b-col.col-7.center
-        b-row.p-4
-          label.about-title Quem somos?
-            label.about-text Somos um grupo brasileiro formado por profissionais inspiradores,
-              | &nbsp; sempre otimizando várias atividades no processo de desenvolvimento de software.
-              br
-              | Conseguimos atuar desde a criação de uma ideia até sua entrega final.
-              br
-              | Nosso objetivo é com as suas metas.
+div.second-divider.center(id='about-us' style='margin-top: -30px')
+  .max-width-1235
+    b-col.col-12.p-3
+      b-row.p-3
+        b-col.col-6(style='padding: 40px')
+          div.about-image
+        b-col.col-6.center
+          b-row.p-4
+            label.about-title Quem somos?
+              label.about-text Somos um grupo brasileiro, formado por profissionais determinados,
+                | &nbsp; sempre otimizando atividades no processo de desenvolvimento de software.
+                br
+                | Conseguimos atuar desde a criação de uma ideia até sua entrega final.
+                br
+                | Nosso objetivo é com as suas metas.
 </template>
 
 <style lang='css' scoped>
@@ -35,7 +36,6 @@ div.second-divider(id='about-us' style='margin-top: -30px')
     background-position-x: 70%;
     border-radius: 15px;
     height: 400px;
-    max-width: 500px;
     margin: 0px auto;
     background-size: 600px;
     display: flex;

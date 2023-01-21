@@ -7,16 +7,16 @@ div.footer-div(id='fale-conosco')
           b-col.col-12.flex-box
             label.title-first-divider(style="font-weight: 700; text-align: center;") Contato
     b-row.center.h-100.flex
-      b-row
+      b-row.mb-5
         b-col.col-12.flex-box
           b-icon(icon='envelope-fill' scale='1' style='color: white; margin-right: 7px')
-          label.contact-text-info contact@americantechdev.org
-        b-col.col-12.flex-box(style='margin-top: 10px')
-          b-icon(icon='telephone-fill' scale='1' style='color: white; margin-right: 7px')
-          a.contact-text-info(href='https://api.whatsapp.com/send?phone=5535999607833&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20a%20American%20Tech.' target="_blank") 55 35 999607833
+          label.contact-text-info(style='cursor: text;') contact@americantechdev.org
         b-col.col-12.flex-box(style='margin-top: 10px')
           b-icon(icon='geo-alt' scale='1' style='color: white; margin-right: 7px; margin-bottom: 1px')
           label.contact-text-info Poços de Caldas - Minas Gerais
+        b-col.col-12.flex-box(style='margin-top: 10px')
+          b-icon(icon='telephone-fill' scale='1' style='color: white; margin-right: 7px')
+          a.contact-text-info(href='https://api.whatsapp.com/send?phone=5535999607833&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20a%20American%20Tech.' target="_blank") +55 (35)999607833
         b-col.col-12.flex-box.center
           div.area-logo
             img(src='../assets/img/logo.png' style='height: 150px; margin-bottom: -20px;')
